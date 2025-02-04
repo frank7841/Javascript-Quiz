@@ -45,41 +45,41 @@
 
 **1. Initialise Game**
 
-- ### Generate a number between 1 and 100
-- ### initialise the turns to 0
-- ### Clear Previous guesses
+- #### Generate a number between 1 and 100
+- #### initialise the turns to 0
+- #### Clear Previous guesses
 
 **2. Game loop**
 
-- ### Prompt the player for a guess
-- ### Validate the guess tob ebetween 1-100
-- ### Compare the guess to the random number
-- ### If correct end the game and congradulate the player
-- ### if incorrect provide feedback and add the guess to the guess list
+- #### Prompt the player for a guess
+- #### Validate the guess tob ebetween 1-100
+- #### Compare the guess to the random number
+- #### If correct end the game and congradulate the player
+- #### if incorrect provide feedback and add the guess to the guess list
 
 **3. Game end**
 
-- ### Display the game feedback , win/loose
-- ### Display option to play again
+- #### Display the game feedback , win/loose
+- #### Display option to play again
 
 ## 🚀 **4. Technical consideration**
 
 **1. Random Number Generation**
 
-- ### Use `Math.random() Math.floor()` to generate a random number between 1 and 100
+- #### Use `Math.random() Math.floor()` to generate a random number between 1 and 100
 
 **2. Input Validation**
 
-- ### Ensure the player input s avalid number between 1 and 100
+- #### Ensure the player input s avalid number between 1 and 100
 
 **3. Tracking previous Guess**
 
-- ### use an array to stpore the player's guesses and display them after each turn
+- #### use an array to stpore the player's guesses and display them after each turn
 
 **4. Game state management**
 
-- ### use varriables to track the random number, number of turms, and a list of previous guesses.
+- #### use varriables to track the random number, number of turms, and a list of previous guesses.
 
 **5. Play again option**
 
-- ### Use a loop or a recursive function if the player choses an option to play again
+- #### Use a loop or a recursive function if the player choses an option to play again
