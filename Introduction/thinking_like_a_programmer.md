@@ -133,3 +133,7 @@ function guessTheNumber(){
 guessTheNumber();
 
 ```
+
+## 📚 **Summary**
+
+- ### So that's it for building the example. You got to the end
