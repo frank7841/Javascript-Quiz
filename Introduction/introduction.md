@@ -122,5 +122,3 @@ fetchData();
 JavaScript is your gateway to the world of web development. Start small, dream big, and keep coding! 🌈
 
 ---
-
-Feel free to copy and paste this into your `README.md` file. It’s designed to be visually appealing and informative for anyone visiting your repository! 🚀

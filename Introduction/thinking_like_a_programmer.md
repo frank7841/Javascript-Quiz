@@ -83,3 +83,53 @@
 **5. Play again option**
 
 - #### Use a loop or a recursive function if the player choses an option to play again
+
+## 🎉 **5. Happy Coding!**
+
+```JavaScript
+function guessTheNumber(){
+    //generate a random number bbetween 1 and 100
+    const randomNumber = Math.floor(Math.random() *100) +1;
+    let turn = 0;
+    const previousGuess = [];
+    while(turn < 10){
+        //prompt player for a guess
+        const guess =  parseInt(prompt('Enter a valid number between 1 and 100'));
+        //validate the guess
+        if(isNaN(guess)|| guess < 1 || guess > 100){
+            alert('Please enter a valid number');
+            continue;
+
+
+        }//add the guess to the list
+        previousGuess.push(guess);
+        turn++;
+    }
+    if(guess === randomNumber){
+        alert('Congradulations you guessed the random number ${randomNumber} in ${turns} turns');
+        break;
+    }
+    else if(guess < randomNumber){
+        alert('Too low! Previous guesses: ${previousGuess.join(', '}');
+
+    }
+    else {
+        alert('Too high! Previous guesses: ${previousGuess.join('. ')}');
+    }
+    if(turns === 10){
+        alert(`Game over! The correct number was ${randomNumber}.`);
+
+    }
+    if(confirm('Do you want to play the game again ?')){
+        guessTheNumber();
+
+    }
+    else{
+        alert('Thank you for playing');
+    }
+
+}
+// start the game
+guessTheNumber();
+
+```
