@@ -11,7 +11,7 @@ Big O notation helps us to understand **_How long_** an algorithim takes to run 
 
 ### 1. O(n)
 
-THe execution time of an algorith grows linearly in proportion to the size of the input data (n)
+THe execution time of an algorithm grows linearly in proportion to the size of the input data (n)
 
 ```javaScript o(n)
 const groceryDataBase = ['banana','milk','kales','tomatoes'] //this is our array of groceries
@@ -35,3 +35,18 @@ searchItem(groceryDatabase, 'tomatoes')
 
 **If the list contains more items, it will take longer to iterate through the array.**
 Having two loops dependent on the groceryDataBase Array, we have **_n + n => O(2n)_** This is acurate However for representation we remove the constant (2) and arrive to **_O(n)_**
+
+### 2. O(1) -- favourite
+
+THe execution time of an algorithm remains constant despite inputsize change
+
+```javaScript o(1)
+const numbers = [1,2,3,4,5,6] //this is our array of numbers
+//get a prticular element from the array
+//the position of the element must be known
+const getElement =(arr, index) => arr[index]//
+    console.log(`Found ${getElement(numbers, 0)}`)
+
+```
+
+**\*This is a **constant** time complexity since we aready know the position of the element we are looking for in the array No need to traverse the array.\***
