@@ -118,4 +118,4 @@ Our big on notaion is
 ###### hint 2 pow what? = 8
 
 **log <sub> 2 </sub> 8 = 3**
-**_O (log n)_**
+**O (log n)**
