@@ -49,4 +49,47 @@ const getElement =(arr, index) => arr[index]//
 
 ```
 
-**This is a \***constant**\* time complexity since we aready know the position of the element we are looking for in the array No need to traverse the array.**
+This is a **_constant_** time complexity since we aready know the position of the element we are looking for in the array No need to traverse the array.
+
+### 3. O(n^2) -- Expensive One
+
+THe execution time of an algorithm grows quadratically with the size of the input data (n)
+
+```javaScript o(n^2)
+const numbers = [1,2,3,4,5,6] //this is our array of numbers
+//find pairs whose sume is an elemt of the array
+function findPairs(arr, index){
+    for(i = 0; i < arr.length; i ++){
+        for(j = i+1; j < arr.length; j++ ){
+            if(arr[i] + arr[j] === arr[index]){
+                console.log(`The pair is :${arr[i]} : ${arr[j]} The sum is ${arr[index]} `)
+            }
+        }
+    }
+}
+findPairs(numbers, 4);
+```
+
+For a nested loop we get our big O as **_O(n^2)_**
+
+If we have a nother loop outside the nested loop for example
+
+```javaScript o(n^2)
+const numbers = [1,2,3,4,5,6] //this is our array of numbers
+//find pairs whose sume is an elemt of the array
+function findPairs(arr, index){
+    for(i = 0; i < arr.length; i ++){
+        for(j = i+1; j < arr.length; j++ ){
+            if(arr[i] + arr[j] === arr[index]){
+                console.log(`The pair is :${arr[i]} : ${arr[j]} The sum is ${arr[index]} `)
+            }
+        }
+    }
+    for(let q = 0; q < arr.length; q ++ ){
+        console.log('-------',q )
+    }
+}
+findPairs(numbers, 4);
+```
+
+Our Big O becomes **_O(n^2 + n )_** This is accurate but **_O(n^2)_** is dominant thus we discard the non-dominant (n) and remain with our dominant term **_o(n^2)_** as the time complexity
