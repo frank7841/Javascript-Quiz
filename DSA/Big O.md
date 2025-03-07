@@ -112,7 +112,7 @@ const numbers = [1,2]
 const number = [2]
 
 Our big on notaion is
-o(log<sub>2</sub>8 = 3 )
+o(log <sub> 2 </sub> 8 = 3 )
 
 
 
