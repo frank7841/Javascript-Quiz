@@ -93,3 +93,40 @@ findPairs(numbers, 4);
 ```
 
 Our Big O becomes **_O(n^2 + n )_** This is accurate but **_O(n^2)_** is the dominant term thus we discard the non-dominant (n) and remain with our dominant term **_o(n^2)_** as the time complexity
+
+### 4. O(log n)
+
+THe execution time of an algorithm grows lograthimically. It increases slowly as the the size of the input data (n) increases
+
+```javaScript o(log n)
+//Look at this array
+const numbers = [1,2,3,4,5,6,7,8] //this is our array of numbers
+///We are looking for an element 2
+// 1. Devide the array in to two and discard the subset without our element
+const numbers =[1,2,3,4,]
+const numbersB =[1,2,3,4,]//Discard
+
+//2.  Devid arry numberA  in to two untill we find our element while discarding the subset without our element
+const numbers = [1,2]
+//3. locate number two
+const number = [2]
+
+Our big on notaion is
+o(log<sub>2</sub>8 = 3 )
+
+
+
+function findPairs(arr, index){
+    for(i = 0; i < arr.length; i ++){
+        for(j = i+1; j < arr.length; j++ ){
+            if(arr[i] + arr[j] === arr[index]){
+                console.log(`The pair is :${arr[i]} : ${arr[j]} The sum is ${arr[index]} `)
+            }
+        }
+    }
+    for(let q = 0; q < arr.length; q ++ ){
+        console.log('-------',q )
+    }
+}
+findPairs(numbers, 4);
+```
