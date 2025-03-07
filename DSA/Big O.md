@@ -33,5 +33,5 @@ const searchItem =(groceries, groceryItem)=>{
 searchItem(groceryDatabase, 'tomatoes')
 ```
 
-**If the list contains more items, it will take longer to iterate through the array.**
-**having two loops dependent on the groceryDataBase Array, we have \***n + n => O(2n)**\* This is acurate bHowever for representation we remove the constant to and a rive to O(n)**
+If the list contains more items, it will take longer to iterate through the array.
+Having two loops dependent on the groceryDataBase Array, we have **_n + n => O(2n)_** This is acurate However for representation we remove the constant (2) and a rive to **_O(n)_**
