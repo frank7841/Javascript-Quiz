@@ -113,9 +113,9 @@ const number = [2]
 ```
 
 Our big on notaion is
-log<sub> 2</sub> 8 = ?
+**log<sub> 2</sub> 8 = ?**
 
 ###### hint 2 pow what? = 8
 
-log <sub> 2 </sub> 8 = 3
+**log <sub> 2 </sub> 8 = 3**
 **_O (log n)_**
