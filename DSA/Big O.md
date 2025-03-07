@@ -49,4 +49,4 @@ const getElement =(arr, index) => arr[index]//
 
 ```
 
-**\*This is a **constant** time complexity since we aready know the position of the element we are looking for in the array No need to traverse the array.\***
+**This is a \***constant**\* time complexity since we aready know the position of the element we are looking for in the array No need to traverse the array.**
