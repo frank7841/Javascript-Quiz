@@ -110,23 +110,7 @@ const numbersB =[1,2,3,4,]//Discard
 const numbers = [1,2]
 //3. locate number two
 const number = [2]
+```
 
 Our big on notaion is
 o(log <sub> 2 </sub> 8 = 3 )
-
-
-
-function findPairs(arr, index){
-    for(i = 0; i < arr.length; i ++){
-        for(j = i+1; j < arr.length; j++ ){
-            if(arr[i] + arr[j] === arr[index]){
-                console.log(`The pair is :${arr[i]} : ${arr[j]} The sum is ${arr[index]} `)
-            }
-        }
-    }
-    for(let q = 0; q < arr.length; q ++ ){
-        console.log('-------',q )
-    }
-}
-findPairs(numbers, 4);
-```
