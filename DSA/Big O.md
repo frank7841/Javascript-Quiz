@@ -7,7 +7,7 @@ Welcome to the world of Data Structures and Algorith
 
 ## 🛠️ Lets dive in to the big 0
 
-Big O notation helps us to understand **_How long_** an algorithim takes to run and **_How Much_** memory is needed as the amount to data input grows. i.e **_Time_**and **_Space_** complexity.
+Big O notation helps us to understand **_How long_** an algorithim takes to run and **_How Much_** memory is needed as the amount to data input grows. i.e **_Time_** and **_Space_** complexity.
 
 ### 1. O(n)
 
@@ -92,4 +92,4 @@ function findPairs(arr, index){
 findPairs(numbers, 4);
 ```
 
-Our Big O becomes **_O(n^2 + n )_** This is accurate but **_O(n^2)_** is dominant thus we discard the non-dominant (n) and remain with our dominant term **_o(n^2)_** as the time complexity
+Our Big O becomes **_O(n^2 + n )_** This is accurate but **_O(n^2)_** is the dominant term thus we discard the non-dominant (n) and remain with our dominant term **_o(n^2)_** as the time complexity
